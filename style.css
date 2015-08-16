@@ -175,7 +175,7 @@ body { color: #444444; }
 }
 
 #main_contents {
-	margin: -36px 340px 0 0; /* 2番目の数字(右側)はsidemenuのwidthの変更に合わせて調整して下さい */
+	margin: -36px 180px 0 160px; /* 2番目の数字(右側)はsidemenuのwidthの変更に合わせて調整して下さい */
 	padding-top: 35px;
 }
 
