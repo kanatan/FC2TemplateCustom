@@ -183,7 +183,7 @@ body { color: #444444; }
 	float: right;
 	position:relative;
 	overflow: hidden;
-	width: 320px; /* サイドメニューの幅 */
+	width: 160px; /* サイドメニューの幅 */
 	padding-top: 35px;
 }
 
