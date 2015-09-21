@@ -239,13 +239,13 @@ body { color: #444444; }
 ================================================= */
 #headermenu {
 	height: 39px;
-	background: url(http://blog-imgs-43.fc2.com/t/e/m/templates/headermenu.png) no-repeat -1px 0;
 }
 
 #headermenu .archives {
+	margin-left:160px;
 	float: left;
 	width: 105px;
-	background: url(http://blog-imgs-43.fc2.com/t/e/m/templates/headermenu.png) no-repeat 103px 0;
+	background: url(http://blog-imgs-43.fc2.com/t/e/m/templates/headermenu.png) no-repeat -1px 0;
 }
 
 #headermenu .archives a {
@@ -253,6 +253,7 @@ body { color: #444444; }
 	width: 105px;
 	height: 39px;
 	line-height: 39px;
+	background: url(http://blog-imgs-43.fc2.com/t/e/m/templates/headermenu.png) no-repeat 103px 0;
 }
 
 #headermenu .archives a:hover {
