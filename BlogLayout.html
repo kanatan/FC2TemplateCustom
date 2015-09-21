@@ -30,7 +30,7 @@
    var LEFT_COLUMN_ID    = "#main_contents";
    
    // 右カラム(メニュー)のID
-   var RIGHT_COLUMN_ID   = "#sidemenu";
+   var RIGHT_COLUMN_ID   = "#right_menu";
    
    // クッキーのキー名
    var COOKIE_KEY_NAME   = "template_blog_fc2";
@@ -373,24 +373,13 @@
 					<!--nextpage--><a href="<%nextpage_url>" title="<%template_nextpage>" class="next nextpage"><%template_nextpage></a><!--/nextpage-->
 				</div><!--/page_navi-->
 				<!--/not_permanent_area-->
-
-				<!--plugin-->
-				<!--plugin_third-->
-				<div class="content plg">
-					<h3 class="plg_header" style="text-align:<%plugin_third_talign>"><%plugin_third_title></h3>
-					<!--plugin_third_description--><div class="plg_description" style="text-align:<%plugin_third_ialign>"><%plugin_third_description></div><!--/plugin_third_description-->
-					<div class="plg_body" style="text-align:<%plugin_third_align>"><%plugin_third_content></div>
-					<!--plugin_third_description2--><div class="plg_footer" style="text-align:<%plugin_third_ialign>"><%plugin_third_description2></div><!--/plugin_third_description2-->
-				</div>
-				<!--/plugin_third-->
-				<!--/plugin-->
 			</div><!--/main_contents-->
 		</div><!--/main-->
 
-		<div id="sidemenu">
+		<div id="right_menu">
 			<!--plugin-->
 			<!--plugin_first-->
-			<div class="sidemenu_content plg">
+			<div class="right_menu_content plg">
 				<h3 class="plg_header" style="text-align:<%plugin_first_talign>"><%plugin_first_title></h3>
 				<!--plugin_first_description--><div class="plg_description" style="text-align:<%plugin_first_ialign>"><%plugin_first_description></div><!--/plugin_first_description-->
 				<div class="plg_body" style="text-align:<%plugin_first_align>"><%plugin_first_content></div>
@@ -398,7 +387,7 @@
 			</div>
 			<!--/plugin_first-->
 			<!--/plugin-->
-		</div><!--/sidemenu-->
+		</div><!--/right_menu-->
 
 		<div id="pagetop"><a href="#container" title="<%template_go_top>"><%template_go_top></a></div>
 	</div><!--/wrap-->

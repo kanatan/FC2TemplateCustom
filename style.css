@@ -117,8 +117,8 @@ body { color: #444444; }
 #main_contents .entry_state /* CM数,TB数,カテゴリ等 */ { font-size: 85%; /* 14px */ }
 #main_contents .entry_body .entry_more /* 「続きを読む」の文字 */ { font-size: 108%; /* 17px */ }
 #main_contents .sub_content .sub_footer /* CM,TBのフッタ */ { font-size: 85%; /* 14px */ }
-#sidemenu /* サイドメニュー(プラグイン) */ { font-size:116%; /* 15px */ }
-#sidemenu h3 /* サイドメニュー(プラグイン)タイトル */ { font-size: 131%; /* 20px */ }
+#right_menu /* サイドメニュー(プラグイン) */ { font-size:116%; /* 15px */ }
+#right_menu h3 /* サイドメニュー(プラグイン)タイトル */ { font-size: 131%; /* 20px */ }
 #footer /* フッター */ { font-size:124%; /* 16px */ }
 
 
@@ -175,11 +175,11 @@ body { color: #444444; }
 }
 
 #main_contents {
-	margin: -36px 180px 0 160px; /* 2番目の数字(右側)はsidemenuのwidthの変更に合わせて調整して下さい */
+	margin: -36px 180px 0 160px; /* 2番目の数字(右側)はright_menuのwidthの変更に合わせて調整して下さい */
 	padding-top: 35px;
 }
 
-#sidemenu {
+#right_menu {
 	float: right;
 	position:relative;
 	overflow: hidden;
@@ -755,21 +755,21 @@ dd.baton_a {
 .p_area .entry_body table th { background-color: #EFEFEF; }
 
 /* =================================================
-	Sidemenu
+	right_menu
 ================================================= */
-#sidemenu {
+#right_menu {
 	border-left: 1px dotted #B5B5B6;
 	border-right: 1px dotted #B5B5B6;
 }
 
-#sidemenu .sidemenu_content {
+#right_menu .right_menu_content {
 	margin-bottom: 10px;
 	padding: 10px;
 	background-color: #FFFFFF; /* サイドメニュー(プラグイン)の背景色、アイコン */
 	border-bottom: 1px dotted #B5B5B6;
 }
 
-#sidemenu h3 {
+#right_menu h3 {
 	margin: -10px -10px 0;
 	padding: 10px 10px 10px 25px;
 	background: #F4F4F4 url(http://blog-imgs-43.fc2.com/t/e/m/templates/content_title.png) no-repeat 10px 10px; /* サイドメニュー(プラグイン)のタイトルの背景色、アイコン */
