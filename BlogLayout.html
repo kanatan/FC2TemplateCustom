@@ -26,8 +26,11 @@
    // デフォルトで表示するレイアウト  glid or list
    var DEFAULT_LAYOUT    = "glid";
    
-   // 左カラム(記事)のID
-   var LEFT_COLUMN_ID    = "#main_contents";
+   // 左カラムのID
+   var LEFT_COLUMN_ID    = "#left_menu";
+   
+   // 中央カラム(記事)のID
+   var CENTER_COLUMN_ID    = "#main_contents";
    
    // 右カラム(メニュー)のID
    var RIGHT_COLUMN_ID   = "#right_menu";
@@ -57,8 +60,9 @@
    function showListLayout() {
    
      if ( !layoutFlag ) return;
-     
+
      jQuery( LEFT_COLUMN_ID ).css( "height", "" );
+     jQuery( CENTER_COLUMN_ID ).css( "height", "" );
      jQuery( RIGHT_COLUMN_ID ).css( "height", "" );
      
      var t = setTimeout(function(){
@@ -90,8 +94,9 @@
    function showGridLayout() {
      
      if (!layoutFlag) return;
-     
+
      jQuery( LEFT_COLUMN_ID ).css( "height", "" );
+     jQuery( CENTER_COLUMN_ID ).css( "height", "" );
      jQuery( RIGHT_COLUMN_ID ).css( "height", "" );
      
      var t = setTimeout(function(){
@@ -122,14 +127,17 @@
    jQuery( ".switch .list" ).click( showListLayout );
    jQuery( ".switch .grid" ).click( showGridLayout );
    
-   // 左カラムと右カラムの高さを合わせる
+   // 中央カラムと右カラムの高さを合わせる
    function equalizeBoxHeight() {
      var leftHeight  = jQuery( LEFT_COLUMN_ID ).height();
+     var centerHeight  = jQuery( CENTER_COLUMN_ID ).height();
      var rightHeight = jQuery( RIGHT_COLUMN_ID ).height();
      
-     var height = (leftHeight > rightHeight)? leftHeight: rightHeight;
+     var height = (centerHeight > rightHeight)? centerHeight: rightHeight;
+     height = (leftHeight > height)? leftHeight: height;
      
      jQuery( LEFT_COLUMN_ID ).height(height + "px");
+     jQuery( CENTER_COLUMN_ID ).height(height + "px");
      jQuery( RIGHT_COLUMN_ID ).height(height + "px");
    };
    
@@ -182,6 +190,18 @@
 		<!--/not_search_area-->
 	</div>
 	<div id="wrap">
+        <div id="left_menu">
+            <!--plugin-->
+            <!--plugin_third-->
+            <div class="left_menu_content plg">
+                <h3 class="plg_header" style="text-align:<%plugin_third_talign>"><%plugin_third_title></h3>
+                <!--plugin_third_description--><div class="plg_description" style="text-align:<%plugin_third_ialign>"><%plugin_third_description></div><!--/plugin_third_description-->
+                <div class="plg_body" style="text-align:<%plugin_third_align>"><%plugin_third_content></div>
+                <!--plugin_third_description2--><div class="plg_footer" style="text-align:<%plugin_third_ialign>"><%plugin_third_description2></div><!--/plugin_third_description2-->
+            </div>
+            <!--/plugin_third-->
+            <!--/plugin-->
+        </div>
 		<div id="main">
 			<div id="main_contents" style="opacity:1;">
 				<!--not_titlelist_area-->
