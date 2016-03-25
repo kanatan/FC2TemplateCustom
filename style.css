@@ -1,0 +1,11 @@
+.main {
+  display: flex;
+}
+.main section {
+  margin: 10px;
+  padding: 10px;
+  flex: 1;
+}
+header, .main section, footer {
+  background: #afa;
+}
